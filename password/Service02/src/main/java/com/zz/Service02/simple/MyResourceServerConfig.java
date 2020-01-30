@@ -16,7 +16,7 @@ public class MyResourceServerConfig extends ResourceServerConfigurerAdapter {
 		// TODO Auto-generated method stub
 		http.sessionManagement()
 			.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().authorizeRequests()
-			.antMatchers("/users/**").access("#oauth2.hasScope('my_write')");
+			.antMatchers("/users/**").access("#oauth2.hasScope('execute')");
 
 	}
 

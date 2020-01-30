@@ -1,4 +1,4 @@
-package com.zz.Service02.simple;
+package com.zz.Service01.simple;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -16,7 +16,7 @@ public class MyResourceServerConfig extends ResourceServerConfigurerAdapter {
 		// TODO Auto-generated method stub
 		http.sessionManagement()
 			.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().authorizeRequests()
-			.antMatchers("/users/**").access("#oauth2.hasScope('my_write')");
+			.antMatchers("/users/**").access("#oauth2.hasScope('execute')");
 
 	}
 

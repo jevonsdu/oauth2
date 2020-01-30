@@ -23,7 +23,7 @@ public class MyResourceServerConfig extends ResourceServerConfigurerAdapter {
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
 		// TODO Auto-generated method stub
-		resources.resourceId("Service01");
+		resources.resourceId("user-info");
 	}
 
 }
